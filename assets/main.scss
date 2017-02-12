@@ -42,9 +42,15 @@ a:hover {
 	margin: 0.8em 0;
 }
 
+.secondary-list-item {
+	font-weight: bold;
+	font-size: 1.0em;
+	margin: 0.8em 0;
+}
+
 /* override the left margin added by font awesome for the main content list,
 since it must be aligned with the content */
-.fa-ul.main-list {
+.fa-ul.main-list, .fa-ul.secondary-list {
 	margin-left: 0;
 }
 
@@ -52,6 +58,16 @@ since it must be aligned with the content */
 .main-list-item-icon {
 	width: 36px;
 	color: $text-color;
+}
+
+.secondary-list-item-icon {
+	width: 24px;
+	color: $text-color;
+}
+
+.secondary-list-sep {
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 /*** logo ***/
@@ -147,4 +163,15 @@ footer {
 		margin-left: 54%;
 		padding: 0;
 	}
+}
+
+.wordmark {
+	display: inline-block;
+	color: white;
+	font-weight: 300;
+}
+
+.wordmark:first-letter {
+	color: red;
+	font-weight: 600;
 }
